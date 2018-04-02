@@ -1,20 +1,39 @@
 
-<div>单层职业excel</div>
-<form action="/analyse/profession1" enctype="multipart/form-data" method="POST">
-    <div>
-        <input type="file" name='file'>
-    </div>
-    <div>
-        <button type="submit">上传</button>
-    </div>
-</form>
 
-<div>两层职业excel</div>
-<form action="/analyse/profession2" enctype="multipart/form-data" method="POST">
-    <div>
-        <input type="file" name='file'>
-    </div>
-    <div>
-        <button  type="submit">上传</button>
-    </div>
-</form>
+<div style="width: 960px; margin: 0 auto">
+    <form class="form-horizontal" action="/analyse/profession1" enctype="multipart/form-data" method="POST">
+        <div class="form-group">
+            <label class="col-sm-2" for="exampleInputPassword1">单层职业excel</label>
+            <div class="col-sm-10">
+                <input type="file" class="form-control" name="file" id="exampleInputPassword1" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">上传</button>
+            </div>
+        </div>
+    </form>
+
+    <form class="form-horizontal" action="/analyse/profession2" enctype="multipart/form-data" method="POST">
+        <div class="form-group">
+            <label class="col-sm-2" for="exampleInputPassword1">两层职业excel</label>
+            <div class="col-sm-10">
+                <input type="file" class="form-control" name="file" id="exampleInputPassword1" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">上传</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+    .form-horizontal {
+        padding: 10px;
+        border: solid 1px #ccc;
+        margin-top: 15px;
+    }
+</style>
